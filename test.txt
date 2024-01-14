@@ -1,0 +1,5 @@
+Buduje aplikacje smart-house do kontroli nad aktualnymi warunkami mieszkania (wyswietlanie wykresow, sterowanie, informacje). Są tam takie rzeczy jak temperatura, wilgotnosc itp.. 
+Aplikacja jest w fastapi. Tworze frontend do tej aplikacji. 
+Pierwsza strona ma być z duzym napisem u gory smart house, przyciskiem aby przejść dalej "Zaczynami!" i jakimis ikonkami po prawej. 
+Druga strona ma miec u góry napis Zarządzanie domem i poniżej 3 duże przyciski z przekierowaniami - 'Informacje o urządzeniach', 'Sterowanie urzadzeniami', 'Raport czujnikow'
+Trzecia strona ma przedsatwiać Aktualne warunki mieszkania (napis u góry) a na dole 3 wykresy przedstawiające kolejno: temperatura, wilgotność, cisnienie z pomiarów znajdujących sie w bazie danych
