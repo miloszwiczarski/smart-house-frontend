@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request, APIRouter
+from fastapi import FastAPI, Request, APIRouter, Form
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -21,14 +21,16 @@ async def read_welcome(request: Request):
 
 @app.get("/home", response_class=HTMLResponse)
 async def read_welcome(request: Request):
+
     return templates.TemplateResponse(
         request=request, name="home.html", context={}
     )
 
 @app.get("/devices_info", response_class=HTMLResponse)
 async def read_welcome(request: Request):
+    username = "Milosz"
     return templates.TemplateResponse(
-        request=request, name="devices_info.html", context={}
+        request=request, name="devices_info.html", context={"username": username}
     )
     
 @app.get("/devices_control", response_class=HTMLResponse)
